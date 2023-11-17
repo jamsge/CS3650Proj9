@@ -1,0 +1,35 @@
+class Main {
+    function void main() {
+      var int x, y, result;
+      var String op, choice;
+      let choice = "Y";
+      let x = Keyboard.readInt("first number: ");
+      while (choice.charAt(0) = 89) { // y
+         let y = Keyboard.readInt("next number: ");
+         let op = Keyboard.readLine("operator (+, -, *, /): ");
+         let result = 10;
+         if (op.charAt(0) = 43) { // +
+            let result = x + y;
+         } 
+         if (op.charAt(0) = 45) { // -
+            let result = x - y;
+         }
+         if (op.charAt(0) = 42) { // *
+            let result = x * y;
+         } 
+         if (op.charAt(0) = 47) { // *
+            let result = x / y;
+         }
+         if (op.charAt(0) < 42 | op.charAt(0) > 47 | op.charAt(0) = 46 | op.charAt(0) = 44) {
+            do Output.printString("Invalid operator!");
+            return;
+         }
+         do Output.printString("result is: ");
+         do Output.printInt(result);
+         do Output.println();
+         let choice = Keyboard.readLine("continue? (y/n): ");
+         let x = result;
+      }
+      return;
+   }
+}
